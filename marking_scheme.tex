@@ -1,0 +1,153 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\newcommand{\points}[1]{\quad\fbox{\textbf{#1 mark%
+\ifnum #1 = 1
+\else
+s%
+\fi}}}
+
+\begin{document}
+
+\section*{Day 1}
+
+\subsection*{Marking Scheme for Problem 1 Day 1}
+
+\begin{itemize}
+\item  Prove that $f(0) = 0$ or $2$ \points{1}
+\end{itemize}
+
+\noindent Case $f(0) = 0$.
+
+\begin{itemize}
+\item Prove that $f(x^2) = 0$ \textbf{or} $(f(x))^2 = x(f(1))^2$ \points{1}
+\item Prove that $f(x) = 0 \forall x$. \points{1}
+\end{itemize}
+
+\noindent Case $f(0) = 2$.
+
+\begin{itemize}
+\item Prove that $f(x^2) = 2$. \points{1}
+\item Prove that $f(x) = \pm 2$ \points{1}
+\item Prove that $f(x) = \begin{cases} 2 & \text{if x is a square} \\ \pm 2 & \text{otherwise} \end{cases}$ \points{1}
+\item Check or prove all solutions. \points{1}
+\end{itemize}
+
+\noindent \textbf{Remark:} If the contestant finds that there is a Cauchy functional equation either in one or both cases, he gets 1 mark.
+
+\subsection*{Marking Scheme for Problem 2 Day 1}
+
+\begin{itemize}
+\item Prove that the total number of matches if $\binom{3n}{2}$ \points{1}
+\item Prove that boys winnings is $\frac{7}{16} \binom{3n}{2}$ \points{1}
+\item Prove that girls winnings between them is $\binom{2n}{2} = n(2n - 1)$ \points{1}
+\item Prove that $n \leq 11$ \points{1}
+\item Prove that $n = 11$ either by
+\begin{itemize}
+\item Checking that the only possible value is $11$ \points{1}
+\item Justifying that the number of boys winnings is an integer \points{1}
+\end{itemize}
+or by
+\begin{itemize}
+\item Checking that $32 \mid 21n(3n - 1)$ \points{1}
+\item Finding that $n \geq 11$. \points{1}
+\end{itemize}
+The last mark is not attained if the conclusion $n = 11$ is not explicitly written.
+
+\item Conclusion: $33$ players \points{1}
+\end{itemize}
+
+\noindent \textbf{Alternatives} We set $m$ to be the number of times a girl wins against a boy
+\begin{itemize}
+\item Prove that girls winnings are $n(2n - 1) + m$ \points{1}
+\item Prove that boys winnings are $\binom{n}{2} + 2n^2 - m$ \points{1}
+\item Find the equation $n(2n - 1) + m = \frac{7}{9}\left( \frac{n(n - 1)}{2} + 2n^2 - m\right)$ \points{1}
+\item Conclude that $11n \geq n^2$ \points{1}
+\item Prove that $n = 11$ as above \points{2}
+\item Conclusion: $33$ players \points{1}
+\end{itemize}
+
+\subsection*{Marking Scheme for Problem 3 Day 1}
+
+\begin{itemize}
+\item Remark that if $\exists r \in \mathbb{N}$ such that $x_{m_r} = 2^r$ then 
+\[
+    x_{m_r + i} = 2^{r - i} (2i + 1) \quad i \in \{ 1, \dots, r \} \points{1}
+\] 
+and $x_{m_r + r + 1} = 2^{r + 1}$ \points{1}
+\item Conclude that every natural number appears at least once \points{1}
+\item Prove that $m_{r + 1} = m_r + r + 1$ \points{1}
+\item Prove that $x_{(r + 1)(r + 2)}{2} = 2r + 1$ or something like \points{1}
+\item Find the value of $n$ \points{1}
+\item Prove somewhere that $n$ is unique \points{1}
+\end{itemize}
+
+\section*{Day 2}
+
+\subsection*{Marking Scheme for Problem 4 Day 2}
+
+\begin{itemize}
+\item Considering both configurations or directed angles, etc... \points{1}
+\item $\implies$ one direction \points{3}
+\item no $\implies$ or $\iff$ but works both ways \points{5}
+\item with $\iff$ or \verb+iff+ or \verb+ssi+ \points{6}
+\item for each relevant angle equality \points{1} \quad maximum \points{2}
+\end{itemize}
+
+\noindent \textbf{Alternatives}
+
+\begin{itemize}
+\item $DAPB$ cyclic $\implies DB$ diameter \points{1}
+\item $BC$ perpendicular to radius $\implies BC$ tangent \points{1}
+\item $\angle CBP = \angle BAP$ (tan-chord) \points{1}
+\item Conversely if $\angle CBP = \angle BAP \implies BC$ is tangent to circumcircle of $ABP$ \points{1}
+\item $\implies DB$ passes through centre ($\perp$ to tangent) \points{1}
+\item Since $\angle DAB = 90^\circ$, $D$ is diametrically opposite $B$ so $D$ is on the circle \points{2}
+\end{itemize}
+
+\subsection*{Marking Scheme for Problem 5 Day 2}
+
+\begin{itemize}
+\item Prove that $(a + c)(b + d) = 4ac$ \textbf{or} $\frac{\frac{a}{b} + \frac{b}{c} + \frac{c}{d} + \frac{d}{a}}{4} \geq \sqrt[4]{1}$ \points{1}
+\item Prove that $(a + c)(b + d) > 4ac = (a + c)(b + d)$ which is a contradiction \textbf{or} checking that equality occurs iff all terms are equal meaning that $b = d$, contradiction again \points{1}
+\item Prove that $A = \frac{(a + c)^2 + (b + d)^2}{ac} - 4$ \points{2}
+\item Prove that $(a + c)^2 + (b + d)^2 \geq 2|a + c||b + d|$ \points{1}
+\item Prove that $\frac{(a + c)^2 + (b + d)^2}{ac} \leq \frac{2|a + c||b + d|}{ac} = -8$ \points{1}
+\item Providing the example of equality \points{1}
+\end{itemize}
+
+\noindent \textbf{Alternatives}
+
+\begin{itemize}
+\item Show that $4 = \frac{d}{c} + \frac{a}{d} + \frac{b}{a} + \frac{c}{b}$. \points{1}
+\item State that $x_i$ are pairwise different \points{1}
+\item Show that $x_1, x_2, x_3, x_4$ are roots of $x^4 - 4x^3 + (A + 2) x^2 - 4x + 1$ \points{1}
+\item Show that $x_i + \frac{1}{x_i}$ are roots of $t^2 - 4t + A$ \points{1}
+\item Show that $x_i + \frac{1}{x_i} = 2 \pm \sqrt{4 - A}$, negative root occurs, and $\sqrt{4 - A} > 0$ \points{1}
+\item Show that $A \leq -12$ \points{1}
+\item Providing the example of equality \points{1}
+\end{itemize}
+
+\subsection*{Marking Scheme for Problem 6 Day 2}
+
+\begin{itemize}
+\item Remark that the process ends once we have $1$s everywhere \points{1}
+\item Case $3 \mid n$: set $s_w, s_r, s_b$ and check that $s_w = \frac{n}{3} - 1$, $s_r = \frac{n}{3}$, $s_b = \frac{n}{3}$ \points{1}
+\item Conclude a contradiction \points{1}
+\end{itemize}
+
+\noindent Case $n = 3k + 1$: 
+\begin{itemize}
+\item Transform configuration $110111 \dots 1111$ to $000000 \dots 0001$ \points{1}
+\item Divide into blocks of three and perform $k$ steps \points{1}
+\end{itemize}
+
+\noindent Case $n = 3k + 2$: 
+\begin{itemize}
+\item Transform configuration $110111 \dots 1111$ to $000000 \dots 0110$ \points{1}
+\item Divide into blocks of three and perform $k$ steps \points{1}
+\end{itemize}
+
+\end{document}
